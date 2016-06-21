@@ -35,8 +35,13 @@
     <dimen name = "font_small_12"> 12sp </dimen>
 
     <!-- typical sizes of views -->
-    <dimen name="button_height_tall_60">60dp</dimen>
-    <dimen name="button_height_normal_40">40dp</dimen>
-    <dimen name="button_height_short_32">32dp</dimen>
+    <dimen name = "button_height_tall_60"> 60dp </dimen>
+    <dimen name = "button_height_normal_40"> 40dp </dimen>
+    <dimen name = "button_height_short_32"> 32dp </dimen>
 
+    <!--  size icon -->
+    <dimen name = "icon_large_48"> 48dp </dimen>
+    <dimen name = "icon_medial_24"> 24dp </dimen>
+    <dimen name = "icon_normal_20"> 20dp </dimen>
+    <dimen name = "icon_small_16"> 16dp </dimen>
 </resources>
