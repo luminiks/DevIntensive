@@ -24,4 +24,9 @@
     <dimen name = "font_normal_14"> 14sp </dimen>
     <dimen name = "font_small_12"> 12sp </dimen>
 
+    <!-- typical sizes of views -->
+    <dimen name="button_height_tall_60">60dp</dimen>
+    <dimen name="button_height_normal_40">40dp</dimen>
+    <dimen name="button_height_short_32">32dp</dimen>
+
 </resources>
