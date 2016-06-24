@@ -1,15 +1,23 @@
 package com.softdesign.devintensive.ui.activities;
 
+import android.graphics.Color;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.View;
+import android.widget.Button;
+import android.widget.EditText;
 
 import com.softdesign.devintensive.R;
 import com.softdesign.devintensive.utils.ConstantManager;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity implements View.OnClickListener{
 
     private static final String TAG = ConstantManager.TAG_PREFIX + "Main Activity";
+
+    protected EditText mEditText;
+    protected Button mRedButton, mGreenButton;
+    protected String mColorMode;
 
     /**
      * Метод вызывыется при создании активити (после изменения конфигурации/возврата к тукущкй
@@ -30,6 +38,13 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         Log.d(TAG, "onCreate");
+
+        mRedButton = (Button) findViewById(R.id.red_btn);
+        mGreenButton = (Button) findViewById(R.id.green_btn);
+        mEditText = (EditText) findViewById(R.id.textView);
+
+        mRedButton.setOnClickListener(this); // обработчик собития (нажатие)
+        mGreenButton.setOnClickListener(this);
 
         if (savedInstanceState == null){
             // активити запускатеся впевые
@@ -106,5 +121,18 @@ public class MainActivity extends AppCompatActivity {
     protected void onRestart() {
         super.onRestart();
         Log.d(TAG, "onRestart");
+    }
+
+    @Override
+    public void onClick(View v) {
+        switch (v.getId()){
+            case R.id.green_btn:
+                mEditText.setBackgroundColor(Color.GREEN);
+                break;
+            case R.id.red_btn:
+                mEditText.setBackgroundColor(Color.RED);
+                break;
+
+        }
     }
 }

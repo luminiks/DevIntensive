@@ -14,16 +14,18 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical">
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal">
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Hello DevIntensiv!"
-            android:id = "@+id/textView" />
+            <EditText
+                android:id = "@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Hello DevIntensiv!"/>
         </LinearLayout>
+
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -36,15 +38,15 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:text="Red Stn"
-                android:layout_weight="0.25"/>
-
+                android:layout_weight="0.5"/>
             <Button
                 android:id="@+id/green_btn"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:text="Green Stn"
-                android:layout_weight="0.75"/>
+                android:layout_weight="0.5"/>
         </LinearLayout>
+
     </LinearLayout>
 
 
