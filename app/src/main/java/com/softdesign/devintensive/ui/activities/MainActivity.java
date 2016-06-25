@@ -17,7 +17,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     protected EditText mEditText;
     protected Button mRedButton, mGreenButton;
-    protected String mColorMode;
+    protected int mColorMode;
 
     /**
      * Метод вызывыется при создании активити (после изменения конфигурации/возврата к тукущкй
@@ -41,7 +41,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         mRedButton = (Button) findViewById(R.id.red_btn);
         mGreenButton = (Button) findViewById(R.id.green_btn);
-//        mEditText = (EditText) findViewById(R.id.textView);
+        mEditText = (EditText) findViewById(R.id.textView);
 
         mRedButton.setOnClickListener(this); // обработчик собития (нажатие)
         mGreenButton.setOnClickListener(this);
@@ -51,6 +51,14 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         } else {
             // активити уже создавалось
+            mColorMode = savedInstanceState.getInt(ConstantManager.COLOR_MODE_KEY);
+
+            if (mColorMode == Color.RED){
+                mEditText.setBackgroundColor(Color.RED);
+            } else if(mColorMode == Color.GREEN){
+                mEditText.setBackgroundColor(Color.GREEN);
+            }
+
         }
 
     }
@@ -127,12 +135,22 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     public void onClick(View v) {
         switch (v.getId()){
             case R.id.green_btn:
-//                mEditText.setBackgroundColor(Color.GREEN);
+                mEditText.setBackgroundColor(Color.GREEN);
+                mColorMode = Color.GREEN;
                 break;
             case R.id.red_btn:
-//                mEditText.setBackgroundColor(Color.RED);
+                mEditText.setBackgroundColor(Color.RED);
+                mColorMode = Color.RED;
                 break;
 
         }
+    }
+
+    @Override
+    protected void onSaveInstanceState(Bundle outState) {
+        super.onSaveInstanceState(outState);
+
+        Log.d(TAG, "onSaveInstanceState");
+        outState.putInt(ConstantManager.COLOR_MODE_KEY, mColorMode);
     }
 }
