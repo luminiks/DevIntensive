@@ -44,4 +44,5 @@
     <dimen name = "icon_24"> 24dp </dimen>
     <dimen name = "icon_20"> 20dp </dimen>
     <dimen name = "icon_16"> 16dp </dimen>
+    <dimen name="line_size">2dp</dimen>
 </resources>
