@@ -12,22 +12,14 @@
 
 
         <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
+            style="@style/layout">
 
             <ImageView
                 style="@style/icon.left"
                 android:src="@drawable/ic_call_black_24dp"
                 />
             <LinearLayout
-                android:layout_width="0dp"
-                android:layout_height="@dimen/size_72"
-                android:layout_weight="1"
-                android:orientation="vertical"
-                android:gravity="center_vertical"
-                android:layout_marginLeft="@dimen/spacing_32"
-                android:layout_marginRight="@dimen/spacing_32">
+                style="@style/layoutIn">
                <android.support.design.widget.TextInputLayout
                    android:layout_height="wrap_content"
                    android:layout_width="match_parent"
@@ -46,10 +38,7 @@
 
         </LinearLayout>
         <View
-            android:layout_width="match_parent"
-            android:layout_height="@dimen/line_size"
-            android:background="@color/grey_light"
-            android:layout_marginLeft="@dimen/spacing_72"/>
+            style="@style/view"/>
 
 
 
