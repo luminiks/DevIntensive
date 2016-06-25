@@ -41,7 +41,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         mRedButton = (Button) findViewById(R.id.red_btn);
         mGreenButton = (Button) findViewById(R.id.green_btn);
-        mEditText = (EditText) findViewById(R.id.textView);
+//        mEditText = (EditText) findViewById(R.id.textView);
 
         mRedButton.setOnClickListener(this); // обработчик собития (нажатие)
         mGreenButton.setOnClickListener(this);
@@ -127,10 +127,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     public void onClick(View v) {
         switch (v.getId()){
             case R.id.green_btn:
-                mEditText.setBackgroundColor(Color.GREEN);
+//                mEditText.setBackgroundColor(Color.GREEN);
                 break;
             case R.id.red_btn:
-                mEditText.setBackgroundColor(Color.RED);
+//                mEditText.setBackgroundColor(Color.RED);
                 break;
 
         }
