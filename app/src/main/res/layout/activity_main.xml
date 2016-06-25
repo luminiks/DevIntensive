@@ -13,29 +13,49 @@
 
         <LinearLayout
             style="@style/layout">
-
             <ImageView
                 style="@style/icon.left"
-                android:src="@drawable/ic_call_black_24dp"
-                />
+                android:src="@drawable/ic_call_black_24dp"/>
             <LinearLayout
                 style="@style/layoutIn">
                <android.support.design.widget.TextInputLayout
                    android:layout_height="wrap_content"
-                   android:layout_width="match_parent"
-                   >
+                   android:layout_width="match_parent">
                    <EditText
-                       android:layout_width="match_parent"
-                       android:layout_height="wrap_content"
+                       style="@style/edit"
+                       android:text="8923424123"
                        android:inputType="phone"
                        android:hint="Мобильный телефон"/>
                </android.support.design.widget.TextInputLayout>
             </LinearLayout>
             <ImageView
                 style = "@style/icon.right"
-                android:src="@drawable/ic_phone_in_talk_black_24dp"
-                />
+                android:src="@drawable/ic_phone_in_talk_black_24dp"/>
+        </LinearLayout>
+        <View
+            style="@style/view"/>
 
+
+        <LinearLayout
+            style="@style/layout">
+            <ImageView
+                style="@style/icon.left"
+                android:src="@drawable/ic_email_black_24dp"/>
+            <LinearLayout
+                style="@style/layoutIn">
+                <android.support.design.widget.TextInputLayout
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent">
+                    <EditText
+                        style="@style/edit"
+                        android:inputType="textEmailAddress"
+                        android:text="MyMail@ya.ru"
+                        android:hint="E-mail"/>
+                </android.support.design.widget.TextInputLayout>
+            </LinearLayout>
+            <ImageView
+                style = "@style/icon.right"
+                android:src="@drawable/ic_send_black_24dp"/>
         </LinearLayout>
         <View
             style="@style/view"/>
