@@ -15,7 +15,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     private static final String TAG = ConstantManager.TAG_PREFIX + "Main Activity";
 
-  
+
 
     /**
      * Метод вызывыется при создании активити (после изменения конфигурации/возврата к тукущкй
