@@ -8,4 +8,70 @@
         <item name="colorAccent">@color/color_accent</item>
     </style>
 
+
+    <style name="icon">
+        <item name="android:layout_width">@dimen/size_24</item>
+        <item name="android:layout_height">@dimen/size_24</item>
+    </style>
+
+    <style name="icon.left" parent="icon">
+        <item name="android:layout_gravity">top|left</item>
+        <item name="android:layout_marginTop">@dimen/spacing_24</item>
+        <item name="android:layout_marginLeft">@dimen/spacing_16</item>
+    </style>
+
+    <style name="icon.right" parent="icon">
+        <item name="android:layout_gravity">top|right</item>
+        <item name="android:layout_marginTop">@dimen/spacing_24</item>
+        <item name="android:layout_marginRight">@dimen/spacing_32</item>
+    </style>
+
+    <style name="layout">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+    <style name="layoutIn">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">@dimen/size_72</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:layout_marginLeft">@dimen/spacing_32</item>
+        <item name="android:layout_marginRight">@dimen/spacing_32</item>
+    </style>
+
+    <style name="view">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/line_size</item>
+        <item name="android:background">@color/grey_light</item>
+        <item name="android:layout_marginLeft">@dimen/spacing_72</item>
+    </style>
+
+    <style name="edit_text">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:enabled">false</item>
+        <item name="android:focusable">false</item>
+    </style>
+
+    <style name="edit_text.edit" parent="edit_text">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textColorHint">@color/grey</item>
+    </style>
+
+
+    <style name="edit_text.white" parent="edit_text">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textColorHint">@color/white</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="view_t">
+        <item name="android:background">@color/grey_light</item>
+        <item name="android:layout_width">@dimen/line_size</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
 </resources>
