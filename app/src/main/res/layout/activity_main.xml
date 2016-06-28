@@ -116,6 +116,7 @@
                    </android.support.design.widget.TextInputLayout>
                 </LinearLayout>
                 <ImageView
+                    android:id="@+id/call_img"
                     style = "@style/icon.right"
                     android:src="@drawable/ic_phone_in_talk_black_24dp"/>
             </LinearLayout>
