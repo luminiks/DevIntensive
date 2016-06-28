@@ -52,10 +52,12 @@ public class MainActivity extends BaseActivity implements View.OnClickListener{
         if (savedInstanceState == null){
             // активити запускатеся впевые
             showSnacbar("Активити запускается впервые");
+            showToast("Активити запускается впервые");
 
         } else {
             // активити уже создавалось
             showSnacbar("Активити уже создано");
+            showToast("Активити уже создано");
 
 
         }
